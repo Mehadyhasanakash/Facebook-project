@@ -1,0 +1,129 @@
+/* color : {
+    06283D
+    1363DF
+    47B5FF
+    DFF6FF
+} */
+
+
+/* ------------------TopBarContainer------------------------------- */
+
+.topBarContainer{
+    width: 100%;
+    height: 50px;
+    background:#47B5FF ;
+    display: flex;
+    position: sticky;
+    top: 0%;
+    align-items: center;
+}
+
+/* ------------------TopBarLeft------------------------------- */
+
+.left{
+    flex: 3;
+}
+
+.left .logo{
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ------------------TopBarCenter------------------------------- */
+.Center{
+    flex: 5;
+}
+
+
+
+.icon{
+    width: 100%;
+    height: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.sear-icon{
+    font-size: 20px !important;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sear-icon:hover{
+    color:#1363DF ;
+}
+
+.topbar-input{
+    width: 80%;
+    font-size: 15px;
+    border: none;
+}
+
+.topbar-input:focus{
+    outline: none;
+}
+
+
+
+/* ------------------TopBarRight------------------------------- */
+
+.right{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.tobar-link{
+    margin-right: 5px;
+    font-size: 15px;
+    color:white ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tobar-link:hover{
+        color:#DFF6FF ;
+}
+
+.icon-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.right-icon{
+    color: white;
+    margin-right: 20px;
+}
+
+.icon-item span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: 10px;
+    
+}
+
+

@@ -1,9 +1,8 @@
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div>
-      <h1>hello My name is Akash</h1>
-    </div>
+    <Home/>
   );
 }
 
