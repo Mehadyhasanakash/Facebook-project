@@ -70,7 +70,7 @@ const TopBar = () => {
        
       </div>
       <div className="person-pofile">
-      <img src= '/assets/images/1' alt="Person" />
+      <img src= 'assets/images/1.jpeg' alt="Person" />
     </div>
 
 
