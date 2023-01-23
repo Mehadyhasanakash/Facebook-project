@@ -1,0 +1,90 @@
+.sidebar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    width: 100%;
+    
+    overflow-y: scroll;
+    
+   
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+   background: rgb(233, 233, 233);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(150, 150, 150);
+}
+
+.iconItem{
+   padding: 18px;
+}
+
+
+
+
+li{
+    list-style: none;
+}
+
+.itemIconList{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.iconItemContant{
+    margin-left: 20px;
+}
+.btn{
+    padding:10px 30px;
+   
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.hr{
+ 
+    border: none;
+    height: 2px;
+    background: rgb(168, 168, 168);
+    margin-bottom: 20px;
+}
+
+/* .friendItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+} */
+.friendItem img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+    
+    
+    
+    
+}
+
+.frinedItemList{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+   
+    cursor: pointer;
+}
+
+.friendListContant{
+    margin-left: 20px;
+}
