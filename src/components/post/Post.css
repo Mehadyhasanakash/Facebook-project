@@ -1,0 +1,85 @@
+.post-container{
+    width: 100%;
+    background: white;
+    margin: 30px 0px;
+    box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.1);
+}
+
+
+.post-wapper{
+    padding: 10px;
+}
+
+.post-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-continer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.more-icon{
+    cursor: pointer;
+}
+
+.pofile-name{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.pofile-time{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-left: 10px;
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+}
+
+.profile-continer img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.post-center{
+    margin: 20px 0px;
+}
+
+.post-tile{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.post-center img{
+    width: 100%;
+    max-height: fit-content;
+    margin: 10px 0;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.post-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-link-heart-button{
+    display: flex;
+}
+
+.post-link-heart-button img{
+    width: 20px;
+    margin-right: 10px;
+
+}
+
+.comments{
+    border-bottom: 1px dotted rgb(179, 179, 179);
+}

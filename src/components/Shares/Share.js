@@ -9,7 +9,7 @@ const Share = () => {
     return (
         <div className="share-container">
             <div className="share-warapper">
-                <div className="pofile">
+            <div className="pofile">
                     <img className='pofile-img' src="assets/images/1.jpeg" alt="" />
                     <input className='profile-input' placeholder="what's in your main akash" />
                 </div>
@@ -34,15 +34,13 @@ const Share = () => {
                             <span>Feeling</span>
                         </div>
 
-                        <button className='share-btn'>Share</button>
-
-                      
 
 
                     </div>
-                    
+                    <button className='share-btn'>Share</button>
 
-                   
+
+
 
                 </div>
 
