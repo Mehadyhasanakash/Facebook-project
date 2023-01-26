@@ -2,7 +2,8 @@ import React from 'react'
 import "./Post.css"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const Post = () => {
+const Post = ({post}) => {
+    console.log(post);
   return (
     <>
     <div className="post-container">
@@ -12,22 +13,22 @@ const Post = () => {
                 <div className="profile-continer">
                     <img src="assets/images/1.jpeg" alt="" />
                     <span className='pofile-name'>Abul</span>
-                    <span className='pofile-time'>5 mins ago</span>
+                    <span className='pofile-time'>{post.date}</span>
                 </div>
                 <MoreVertIcon className='more-icon'/>
 
             </div>
             <div className="post-center">
-                <span className='post-tile'>Hey! This is my frist Post</span>
-                <img src="assets/images/3.jpeg" alt="" />
+                <span className='post-tile'>{post.desc}</span>
+                <img src={post.photo} alt="" />
             </div>
             <div className="post-bottom">
                 <div className="post-link-heart-button">
                 <img src="assets/images/like.png" alt="" />
                 <img src="assets/images/heart.png" alt="" />
-                <span>32 People Like This</span>
+                <span>{post.like} like this post</span>
                 </div>
-                <span className='comments'>9 comments</span>
+                <span className='comments'>{post.comment} comments</span>
             </div>
 
         </div>
