@@ -74,6 +74,7 @@ b{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .users-friends-items{
@@ -81,6 +82,7 @@ b{
     flex-direction: column;
     margin-bottom: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 .users-friends-name{
