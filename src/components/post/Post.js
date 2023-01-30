@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Post.css"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import {Users} from '../../data';
+
 
 const Post = ({post}) => {
-    console.log(post);
+
+    const [like, setLike] = useState(post.like);
+    const [isLike, setisLike] = useState(false);
+
+    const HandelLike = () =>{
+        setLike(isLike ? like - 1 : like + 1);
+        setisLike(! isLike)
+
+    }
+
+
   return (
     <>
     <div className="post-container">
@@ -11,8 +23,8 @@ const Post = ({post}) => {
 
             <div className="post-top">
                 <div className="profile-continer">
-                    <img src="assets/images/1.jpeg" alt="" />
-                    <span className='pofile-name'>Abul</span>
+                    <img src={Users.filter(u => u.id === post?.userId) [0].profilePicture} alt="" />
+                    <span className='pofile-name'>{Users.filter(u => u.id === post?.userId) [0].username}</span>
                     <span className='pofile-time'>{post.date}</span>
                 </div>
                 <MoreVertIcon className='more-icon'/>
@@ -24,9 +36,9 @@ const Post = ({post}) => {
             </div>
             <div className="post-bottom">
                 <div className="post-link-heart-button">
-                <img src="assets/images/like.png" alt="" />
-                <img src="assets/images/heart.png" alt="" />
-                <span>{post.like} like this post</span>
+                <img src="assets/images/like.png" onClick={HandelLike} alt="" />
+                <img src="assets/images/heart.png" onClick={HandelLike} alt="" />
+                <span>{like} like this post</span>
                 </div>
                 <span className='comments'>{post.comment} comments</span>
             </div>

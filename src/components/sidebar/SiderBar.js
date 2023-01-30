@@ -9,6 +9,10 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+
+import {Users} from '../../data';
+import MyFriend from '../myFriend/MyFriend';
+
 const SiderBar = () => {
   return (
     <div className='sidebar'>
@@ -68,46 +72,11 @@ const SiderBar = () => {
 
         <div className="friendItem">
 
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
-          <li className="frinedItemList">
-            <img src="assets/images/1.jpeg" alt="Friend" />
-            <span className='friendListContant'>Abul</span>
-          </li>
+          {Users.map(u => (
+            <MyFriend key={u.id} user = {u}/>
+          ))}
+
+         
           </div>
         </div>
 
